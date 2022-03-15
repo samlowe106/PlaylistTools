@@ -5,13 +5,13 @@
 {% endblock %}
 
 {% block body %}
-<form action="/" method="POST">
+<form action="/" method="POST" enctype="multipart/form-data">
 
-    <input type="text" name="username" id="username" autofocus required>
-    <label for="username"> Username </label><br>
+    <input type="text" name="playlist" id="playlist" autofocus>
+    <label for="playlist"> Link your playlist here </label><br>
 
-    <input type="password" name="password" id="password" required>
-    <label for="password"> Password </label><br>
+    <input type="file" name="file">
+    <label for="file">or upload a playlist from a file</label>
 
     <input type="submit" value="Start">
 
